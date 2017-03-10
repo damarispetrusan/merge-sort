@@ -6,13 +6,17 @@
 \pard\pardeftab720
 
 \f0\fs26 \cf2 \expnd0\expndtw0\kerning0
+var a = [34, 203, 3, 746, 200, 984];\
+console.log(mergeSort(a));\
+\
 function mergeSort(a) \{\
 	if (a.length<2)\{\
 \'a0 	return a;\
 \'a0 \} else \{\
-\'a0 	var mijloc = a.length/2;\
+\'a0   var mijloc = a.length/2;\
 \'a0 \'a0 var stanga = a.slice(0,mijloc);\
 \'a0 \'a0 var dreapta = a.slice(mijloc, a.length)\
+console.log(arr)\
 \'a0 \}\
 \'a0 return merge(mergeSort(stanga), mergeSort(dreapta));\
 \}\
@@ -35,6 +39,4 @@ function merge (s,d)\{\
 \'a0 return result;\
 \}\
 \
-var a = [34, 203, 3, 746, 200, 984];\
-console.log(mergeSort(a));\
 }
