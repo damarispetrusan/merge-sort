@@ -1,12 +1,12 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 {\fonttbl\f0\fswiss\fcharset0 ArialMT;}
-{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \deftab720
 \pard\pardeftab720
 
-\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 function mergeSort(a) \{\
+\f0\fs26 \cf2 \expnd0\expndtw0\kerning0
+function mergeSort(a) \{\
 	if (a.length<2)\{\
 \'a0 	return a;\
 \'a0 \} else \{\
@@ -16,12 +16,8 @@
 \'a0 \}\
 \'a0 return merge(mergeSort(stanga), mergeSort(dreapta));\
 \}\
-\pard\pardeftab720
-\cf2 \cb1 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \
-\pard\pardeftab720
-\cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 function merge (s,d)\{\
+\
+function merge (s,d)\{\
 	var result = [];\
 \'a0 while(s.length && d.length) \{\
 \'a0 	if(s[0] <= d[0])\{\
@@ -38,11 +34,7 @@
 \'a0 \}\
 \'a0 return result;\
 \}\
-\pard\pardeftab720
-\cf2 \cb1 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \
-\pard\pardeftab720
-\cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 var a = [10, 9, 2, 6, 7];\
+\
+var a = [34, 203, 3, 746, 200, 984];\
 console.log(mergeSort(a));\
 }
